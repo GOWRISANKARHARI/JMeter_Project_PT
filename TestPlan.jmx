@@ -5554,16 +5554,16 @@ vars.put(&quot;randomPassword&quot;, password)
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment - Performance" enabled="false"/>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="567593369">OrangeHrm - Test Plan</stringProp>
             <stringProp name="-72465030">Test Fragment - Admin</stringProp>
             <stringProp name="292062451">PIM - ${__threadGroupName}</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Performance Module -${__threadNum}" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Performance Module -${__threadNum}">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -17977,7 +17977,7 @@ if (!data.getString(&quot;email&quot;).equals(expectedEmail)) {
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\aggregate_results.csv</stringProp>
+        <stringProp name="filename">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\sample.csv</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
