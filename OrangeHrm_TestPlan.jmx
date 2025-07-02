@@ -41,7 +41,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - Admin">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - Admin" enabled="true">
         <stringProp name="ThreadGroup.num_threads">${thread}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${seconds}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -69,14 +69,14 @@
           <boolProp name="CounterConfig.per_user">true</boolProp>
         </CounterConfig>
         <hashTree/>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - Login"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - Login" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller" enabled="true">
             <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Login.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller - Admin">
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller - Admin" enabled="true">
           <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Admin.jmx</stringProp>
         </IncludeController>
         <hashTree/>
@@ -89,14 +89,6 @@
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller - Logout" enabled="true">
             <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Logout.jmx</stringProp>
           </IncludeController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="false">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="-1921509185">Test Fragment - Logout</stringProp>
-            </collectionProp>
-          </ModuleController>
           <hashTree/>
         </hashTree>
         <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler - End - ${__threadGroupName}" enabled="true">
@@ -119,7 +111,7 @@ if (waitTime &gt; 0) {
 }</stringProp>
         </JSR223Sampler>
         <hashTree/>
-        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler - errorRate">
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler - errorRate" enabled="true">
           <stringProp name="scriptLanguage">groovy</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="filename"></stringProp>
@@ -176,7 +168,7 @@ if (total &gt; 0) {
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - Performance">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - Performance" enabled="true">
         <stringProp name="ThreadGroup.num_threads">${thread}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${seconds}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -204,14 +196,14 @@ if (total &gt; 0) {
           <boolProp name="CounterConfig.per_user">true</boolProp>
         </CounterConfig>
         <hashTree/>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - Login"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - Login" enabled="true"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller" enabled="true">
             <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Login.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller - Performance">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller - Performance" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="567593369">OrangeHrm - Test Plan</stringProp>
@@ -225,14 +217,6 @@ if (total &gt; 0) {
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="false">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="-1921509185">Test Fragment - Logout</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller" enabled="true">
             <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Logout.jmx</stringProp>
           </IncludeController>
@@ -316,7 +300,7 @@ if (total &gt; 0) {
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - Recruitment">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - Recruitment" enabled="true">
         <stringProp name="ThreadGroup.num_threads">${thread}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${seconds}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -344,14 +328,14 @@ if (total &gt; 0) {
           <boolProp name="CounterConfig.per_user">true</boolProp>
         </CounterConfig>
         <hashTree/>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - Login"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - Login" enabled="true"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller" enabled="true">
             <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Login.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller - Recruitment">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller - Recruitment" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="567593369">OrangeHrm - Test Plan</stringProp>
@@ -365,14 +349,6 @@ if (total &gt; 0) {
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="false">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="-1921509185">Test Fragment - Logout</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller" enabled="true">
             <stringProp name="IncludeController.includepath">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\Test Fragment - Logout.jmx</stringProp>
           </IncludeController>
@@ -486,7 +462,7 @@ if (total &gt; 0) {
         </JSR223Sampler>
         <hashTree/>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
         <stringProp name="ProxyControlGui.port">8888</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list"/>
         <collectionProp name="ProxyControlGui.include_list"/>
@@ -552,7 +528,7 @@ if (total &gt; 0) {
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment - Login" enabled="false"/>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="login - ${__threadGroupName}">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="login - ${__threadGroupName}" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1048,7 +1024,7 @@ if (total &gt; 0) {
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment - Logout" enabled="false"/>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="logout -  ${__threadGroupName}">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="logout -  ${__threadGroupName}" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -1085,7 +1061,7 @@ if (total &gt; 0) {
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment - Admin" enabled="false"/>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="PIM - ${__threadGroupName}">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="PIM - ${__threadGroupName}" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -5542,7 +5518,7 @@ vars.put(&quot;randomPassword&quot;, password)
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment - Performance" enabled="false"/>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module ControllerModule Controller">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module ControllerModule Controller" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="567593369">OrangeHrm - Test Plan</stringProp>
@@ -6478,7 +6454,7 @@ vars.put(&quot;randomPassword&quot;, password)
             <hashTree/>
           </hashTree>
         </hashTree>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">2</stringProp>
         </LoopController>
         <hashTree>
@@ -9341,7 +9317,7 @@ props.put(&quot;trackerName&quot;, trackerName)
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment - Recruitment" enabled="false"/>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller - Add Employee -PIM">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller - Add Employee -PIM" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="567593369">OrangeHrm - Test Plan</stringProp>
@@ -17894,7 +17870,7 @@ if (!data.getString(&quot;email&quot;).equals(expectedEmail)) {
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -17931,7 +17907,7 @@ if (!data.getString(&quot;email&quot;).equals(expectedEmail)) {
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph">
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -17965,7 +17941,7 @@ if (!data.getString(&quot;email&quot;).equals(expectedEmail)) {
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\sample.csv</stringProp>
+        <stringProp name="filename">C:\Users\GOWRISANKAR\OneDrive\Desktop\jmeter\JMeter Project\Jmeter_Project\aggregate_results.csv</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
